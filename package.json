@@ -1,0 +1,22 @@
+{
+  "name": "dict",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Dictionary.app interface for Atom",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-text-editor": ["dict:dictionary"]
+  },
+  "repository": "https://github.com/aki77/atom-dict",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "scripts": {
+    "install": "gcc -o bin/dictionary -O3 -framework CoreServices -framework Foundation lib/dictionary.m"
+  }
+}

@@ -1,0 +1,63 @@
+name: 'Atom Dictionary'
+scopeName: 'text.dict'
+'fileTypes': [
+]
+patterns: [
+  {
+    'match': '^(\\d+)(?:$|\\s)'
+    'captures':
+      '1':
+        'name': 'variable.number.dict'
+  }
+  {
+    'match': '^(\\S+?【\\S+?】)'
+    'captures':
+      '1':
+        'name': 'keyword.other.dictionaryname.dict'
+  }
+  # {
+  #   'match': '^(代?名　?詞|形容詞|[自他助]?動　?詞|副　?詞|前置詞|接[尾頭]辞|間投詞|冠　?詞|接続詞)'
+  #   'name': 'constant.other.grammer.dict'
+  # }
+  {
+    'match': '^(\\w+)\\s(/[^/]+/)\\s*'
+    'captures':
+      '1':
+        'name': 'keyword.other.dictionaryname.dict'
+      '2':
+        'name': 'comment.block.documentation.dict'
+  }
+  {
+    'match': '^(\\w+)$'
+    'captures':
+      '1':
+        'name': 'keyword.other.dictionaryname.dict'
+  }
+  {
+    'begin': '｟'
+    'end': '｠'
+    'name': 'comment.block.documentation.dict'
+  }
+  {
+    'begin': '〖'
+    'end': '〗'
+    'name': 'comment.block.documentation.dict'
+  }
+  {
+    'begin': '〘'
+    'end': '〙'
+    'name': 'comment.block.documentation.dict'
+  }
+  {
+    'match': '\\s(\\S+/)\\s'
+    'captures':
+      '1':
+        'name': 'comment.block.documentation.dict'
+  }
+  {
+    'match': '^(\\S+?)\\(\\S+?\\)'
+    'captures':
+      '1':
+        'name': 'keyword.other.dictionaryname.dict'
+  }
+]
