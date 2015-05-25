@@ -19,5 +19,11 @@
   },
   "scripts": {
     "install": "gcc -o bin/dictionary -O3 -framework CoreServices -framework Foundation lib/dictionary.m"
-  }
+  },
+  "keywords": [
+    "dictionary",
+    "mac",
+    "osx",
+    "translation"
+  ]
 }
