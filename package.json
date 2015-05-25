@@ -1,9 +1,14 @@
 {
   "name": "dict",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dictionary.app interface for Atom",
-  "keywords": [],
+  "keywords": [
+    "dictionary",
+    "mac",
+    "osx",
+    "translation"
+  ],
   "activationCommands": {
     "atom-text-editor": [
       "dict:dictionary"
@@ -19,11 +24,5 @@
   },
   "scripts": {
     "install": "gcc -o bin/dictionary -O3 -framework CoreServices -framework Foundation lib/dictionary.m"
-  },
-  "keywords": [
-    "dictionary",
-    "mac",
-    "osx",
-    "translation"
-  ]
+  }
 }
