@@ -1,12 +1,13 @@
 {
   "name": "dict",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Dictionary.app interface for Atom",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-text-editor": ["dict:dictionary"]
+    "atom-text-editor": [
+      "dict:dictionary"
+    ]
   },
   "repository": "https://github.com/aki77/atom-dict",
   "license": "MIT",
