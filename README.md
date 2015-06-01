@@ -1,6 +1,7 @@
 # atom-dict package
 
 Dictionary.app interface for Atom.(OSX only)
+[![Build Status](https://travis-ci.org/aki77/atom-dict.svg)](https://travis-ci.org/aki77/atom-dict)
 
 ![](http://i.gyazo.com/1afbef515b76deb9969f8b57f6ea70bf.gif)
 
