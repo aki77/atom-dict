@@ -2,7 +2,7 @@
 
 Dictionary.app interface for Atom.(OSX only)
 
-![](http://i.gyazo.com/ef95b3e62efb96bad6d3271264f11845.gif)
+![](http://i.gyazo.com/1afbef515b76deb9969f8b57f6ea70bf.gif)
 
 Inspired by [dictionary.vim](https://github.com/itchyny/dictionary.vim).
 
@@ -18,7 +18,8 @@ edit `~/.atom/keymap.cson`
 
 ```coffeescript
 'atom-text-editor':
-  'ctrl-c w': 'dict:dictionary'
+  'ctrl-c w': 'dict:search'
+  'ctrl-c shift-w': 'dict:input'
 ```
 
 ## Settings

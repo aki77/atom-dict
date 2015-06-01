@@ -17,7 +17,9 @@ module.exports =
     @dictionary = new Dictionary
     @subscriptions = new CompositeDisposable
 
-    @subscriptions.add atom.commands.add 'atom-text-editor', 'dict:dictionary', @dictionary.search
+    @subscriptions.add atom.commands.add 'atom-text-editor',
+      'dict:search': @dictionary.search
+      'dict:input': @dictionary.open
 
   deactivate: ->
     @subscriptions.dispose()

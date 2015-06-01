@@ -13,23 +13,25 @@ class Dictionary
     @inputView = null
 
   search: =>
-    @inputView ?= new InputView(callback: @runCommand)
-
     editor = atom.workspace.getActiveTextEditor()
     return @open() unless editor
-    selectedText = editor.getSelectedText()
-    return @open() unless selectedText.length > 0
+    text = editor.getSelectedText()
+    text = editor.getWordUnderCursor() unless text.length > 0
+    return @open() unless text.length > 0
 
-    @runCommand(selectedText)
+    @runCommand(text)
 
-  open: ->
+  open: =>
+    @inputView ?= new InputView(callback: @runCommand)
     @inputView.open()
 
   runCommand: (text) =>
-    {command, args} = @getCmdAndArgs(text)
     editor = new TextEditor(mini: false, softWrapped: true)
     editor.getTitle = -> 'Atom Dictionary'
+    @buildProcess(text, editor)
 
+  buildProcess: (text, editor) ->
+    {command, args} = @getCmdAndArgs(text)
     process = new BufferedProcess({
       command,
       args,

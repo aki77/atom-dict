@@ -1,3 +1,8 @@
+## 0.2
+* Use TextEditor::getWordUnderCursor
+* Replace 'dict:dictionary' with 'dict:search'
+* Add spec
+
 ## 0.1.1
 * Update package.json
 

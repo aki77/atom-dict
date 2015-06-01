@@ -11,7 +11,8 @@
   ],
   "activationCommands": {
     "atom-text-editor": [
-      "dict:dictionary"
+      "dict:search",
+      "dict:input"
     ]
   },
   "repository": "https://github.com/aki77/atom-dict",
