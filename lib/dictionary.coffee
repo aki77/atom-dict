@@ -1,7 +1,7 @@
 path = require 'path'
 {BufferedProcess, TextEditor} = require 'atom'
 {TextEditorView}  = require 'atom-space-pen-views'
-InputView = require './input-view'
+InputDialog = require '@aki77/atom-input-dialog'
 
 capitalize = (str)-> str[0].toUpperCase() + str[1..].toLowerCase()
 
@@ -10,7 +10,6 @@ class Dictionary
 
   destroy: =>
     @closeResult()
-    @inputView = null
 
   search: =>
     editor = atom.workspace.getActiveTextEditor()
@@ -22,8 +21,11 @@ class Dictionary
     @runCommand(text)
 
   open: =>
-    @inputView ?= new InputView(callback: @runCommand)
-    @inputView.open()
+    dialog = new InputDialog
+      callback: @runCommand
+      prompt: 'Enter a word'
+      elementClass: 'dict-input'
+    dialog.attach()
 
   runCommand: (text) =>
     editor = new TextEditor(mini: false, softWrapped: true)

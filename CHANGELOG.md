@@ -1,4 +1,7 @@
-## 0.2
+## 0.2.1
+* Replace InputView with @aki77/atom-input-dialog
+
+## 0.2.0
 * Use TextEditor::getWordUnderCursor
 * Replace 'dict:dictionary' with 'dict:search'
 * Add spec
