@@ -1,3 +1,6 @@
+## 0.2.2
+* Remove atom-space-pen-views
+
 ## 0.2.1
 * Replace InputView with @aki77/atom-input-dialog
 

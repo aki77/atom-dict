@@ -1,6 +1,5 @@
 path = require 'path'
 {BufferedProcess, TextEditor} = require 'atom'
-{TextEditorView}  = require 'atom-space-pen-views'
 InputDialog = require '@aki77/atom-input-dialog'
 
 capitalize = (str)-> str[0].toUpperCase() + str[1..].toLowerCase()
