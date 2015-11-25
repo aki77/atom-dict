@@ -1,3 +1,6 @@
+## 0.2.3
+* Replace 'TextEditor' with 'atom.workspace.buildTextEditor'
+
 ## 0.2.2
 * Remove atom-space-pen-views
 

@@ -1,5 +1,5 @@
 path = require 'path'
-{BufferedProcess, TextEditor} = require 'atom'
+{BufferedProcess} = require 'atom'
 InputDialog = require '@aki77/atom-input-dialog'
 
 capitalize = (str)-> str[0].toUpperCase() + str[1..].toLowerCase()
@@ -27,7 +27,7 @@ class Dictionary
     dialog.attach()
 
   runCommand: (text) =>
-    editor = new TextEditor(mini: false, softWrapped: true)
+    editor = atom.workspace.buildTextEditor(mini: false, softWrapped: true)
     editor.getTitle = -> 'Atom Dictionary'
     @buildProcess(text, editor)
 
