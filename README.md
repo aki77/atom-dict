@@ -1,5 +1,7 @@
 # atom-dict package
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/aki77/atom-dict.svg)](https://greenkeeper.io/)
+
 Dictionary.app interface for Atom.(OSX only)
 [![Build Status](https://travis-ci.org/aki77/atom-dict.svg)](https://travis-ci.org/aki77/atom-dict)
 
