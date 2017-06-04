@@ -1,3 +1,6 @@
+## 0.3.1
+* Fix deprecated
+
 ## 0.3.0
 * Disable confirm dialog
 * Remove atom-space-pen-views

@@ -27,7 +27,7 @@ class Dictionary
     dialog.attach()
 
   runCommand: (text) =>
-    editor = atom.workspace.buildTextEditor(mini: false, softWrapped: true)
+    editor = atom.workspace.buildTextEditor(mini: false, softWrapped: true, autoHeight: false)
     editor.getTitle = -> 'Atom Dictionary'
     editor.isModified =  -> false
     @buildProcess(text, editor)
