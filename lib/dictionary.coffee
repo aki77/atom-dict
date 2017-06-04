@@ -22,13 +22,14 @@ class Dictionary
   open: =>
     dialog = new InputDialog
       callback: @runCommand
-      prompt: 'Enter a word'
+      labelText: 'Enter a word'
       elementClass: 'dict-input'
     dialog.attach()
 
   runCommand: (text) =>
     editor = atom.workspace.buildTextEditor(mini: false, softWrapped: true)
     editor.getTitle = -> 'Atom Dictionary'
+    editor.isModified =  -> false
     @buildProcess(text, editor)
 
   buildProcess: (text, editor) ->

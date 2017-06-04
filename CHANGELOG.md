@@ -1,3 +1,7 @@
+## 0.3.0
+* Disable confirm dialog
+* Remove atom-space-pen-views
+
 ## 0.2.3
 * Replace 'TextEditor' with 'atom.workspace.buildTextEditor'
 

@@ -18,10 +18,10 @@
   "repository": "https://github.com/aki77/atom-dict",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@aki77/atom-input-dialog": "^0.1.1"
+    "@aki77/atom-input-dialog": "^1.0.0"
   },
   "scripts": {
     "install": "gcc -o bin/dictionary -O3 -framework CoreServices -framework Foundation lib/dictionary.m"
