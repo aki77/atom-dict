@@ -1,7 +1,7 @@
 {
   "name": "dict",
   "main": "./lib/main",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Dictionary.app interface for Atom",
   "keywords": [
     "dictionary",
